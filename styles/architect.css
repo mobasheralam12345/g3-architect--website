@@ -82,3 +82,36 @@ nav ul li a{
         padding: 50px;
        }
 }
+main{
+    max-width: 1240px;
+    margin: 20px 20px 20px 200px ;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+    
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.span-1{
+    color: var(--dark-03, #727272);
+    font-size: 45px;
+    font-weight: 500;
+}
+.span-2{
+    color: var(--dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+.span-3{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
