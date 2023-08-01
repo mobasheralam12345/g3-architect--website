@@ -1,0 +1,58 @@
+/* Goggle fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.primary-button{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* header styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 60px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    color: #D9D9D9;
+    font-size: 45px;
+    font-weight: 700;
+}
+nav>ul{
+    display:flex;
+}
+nav>ul>li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Banner Styles */
+.banner-title{
+    font-size: 64px;
+    font-weight: 700; 
+}
+
+.banner-content{
+   max-width: 800px;
+   text-align: center;
+    margin: 0 auto;
+}
+.banner-description{
+    color: #727272;
+}
+.banner img{
+    width: 100%;
+}
