@@ -8,6 +8,10 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    cursor: pointer;
 }
 
 /* header styles */
@@ -40,6 +44,7 @@ nav ul li a{
 }
 
 /* Banner Styles */
+
 .banner-title{
     font-size: 64px;
     font-weight: 700; 
@@ -48,11 +53,32 @@ nav ul li a{
 .banner-content{
    max-width: 800px;
    text-align: center;
-    margin: 0 auto;
+   margin: 0 auto;
+   margin-bottom: 10px;
 }
 .banner-description{
     color: #727272;
 }
 .banner img{
     width: 100%;
+}
+
+/* For Responsive */
+
+@media screen and (max-width:576px){
+   header{
+    padding: 20px;
+   } 
+   nav{
+    flex-direction: column;
+   }
+}
+/* For Tablet */
+@media screen and ( min-width:576px) and (max-width:992px){
+    nav{
+        flex-direction:column ;
+    }
+    header{
+        padding: 50px;
+       }
 }
