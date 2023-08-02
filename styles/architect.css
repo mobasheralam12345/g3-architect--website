@@ -1,9 +1,12 @@
-/* Goggle fonts */
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* Shared code */
 
 *{
     font-family: 'Work Sans', sans-serif;
 }
+
 .primary-button{
     color: #FFF;
     font-size: 20px;
@@ -12,6 +15,9 @@
     border-radius: 8px;
     background: #FF900E;
     cursor: pointer;
+}
+.gray-color{
+    color: gray;
 }
 
 /* header styles */
@@ -25,7 +31,7 @@ nav{
     align-items: center;
 }
 .nav-title{
-    color: #D9D9D9;
+    color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
@@ -63,27 +69,8 @@ nav ul li a{
     width: 100%;
 }
 
-/* For Responsive */
-
-@media screen and (max-width:576px){
-   header{
-    padding: 20px;
-   } 
-   nav{
-    flex-direction: column;
-   }
-}
-/* For Tablet */
-@media screen and ( min-width:576px) and (max-width:992px){
-    nav{
-        flex-direction:column ;
-    }
-    header{
-        padding: 50px;
-       }
-}
 main{
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 20px 20px 20px 200px ;
 }
 .teams-container{
@@ -115,3 +102,152 @@ main{
     font-size: 45px;
     font-weight: 700;
 }
+/* features style */
+.features{
+    margin-top: 130px;
+    display: flex;
+    gap: 10px;   
+    margin-right:2%;
+}
+.features-content .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom:  20px;
+}
+.features-content .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-img img{
+    height: 90%;
+    margin-left: 70px;
+}
+.ten-year-badge{
+    width: 342px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-year-badge h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.ten-year-badge p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Facts Section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 20px;
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom :5px;
+    margin-top: 5px;
+
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+/* Sponsor style */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width: 153.333px;
+}
+.foot{
+    background: #FFF4E7;
+    width: 90%;
+    height: 80px;
+    flex-shrink: 0;
+    margin-left: 6%;
+    margin-right: 10%;    
+}
+.footer-class{
+    border-radius: 8px;
+    text-align: center;
+    padding: 35px;
+}
+
+
+/* For Responsive */
+
+@media screen and (max-width:576px){
+    header{
+     padding: 20px;
+    } 
+    nav{
+     flex-direction: column;
+    }
+    .teams-container ,.sponsors-img-container,
+    .facts-card-container {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .facts-card-container {
+        padding-right: 20px;
+        padding-left: 20px;
+        gap: 20px;
+    }
+    main{
+        margin: 20px 20px 20px 20px ;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-img img{
+        width: 80%;
+        margin-left: 0;
+    }
+    .ten-year-badge{
+        position: static;
+        max-width: 300px;
+    }
+ }
+ /* For Tablet */
+ @media screen and ( min-width:576px) and (max-width:992px){
+     nav ,.features, .teams-container ,.sponsors-img-container{
+         flex-direction:column ;
+     }
+     header{
+         padding: 50px;
+        }
+        main{
+
+            margin: 20px 20px 20px 50px ;
+        }
+ }
+
